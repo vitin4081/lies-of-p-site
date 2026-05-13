@@ -258,3 +258,101 @@ footer{
 
     line-height: 1.6;
 }
+
+
+
+                        /* LINK DOS CARDS */
+                        .boss-link{
+                            text-decoration: none;
+
+                            color: inherit;
+                        }
+
+
+
+/* BOSS DETAILS PAGE */
+.boss-details{
+    min-height: 100vh;
+
+    background-color: #0D0D0D;
+}
+
+/* BOSS BANNER */
+.boss-banner{
+    height: 50vh;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+    url('../img/Parade_Master_1.webp');
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+/* BOSS BANNER TITLE */
+.boss-banner h2{
+    font-size: 80px;
+
+    font-family: 'Cinzel', serif;
+
+    text-shadow: 0 0 20px black;
+}
+
+/* INFO */
+.boss-info{
+    display: flex;
+
+    gap: 50px;
+
+    padding: 40px;
+
+    align-items: center;
+}
+
+/* IMAGEM */
+.boss-info img{
+    width:450px;
+
+    border: 1px solid rgba (58,110,165,0.5);
+
+    box-shadow: 0 0 30px rgba(58,110,165,0.2);
+}
+
+/* TEXTO */
+.boss-text{
+    max-width: 700px;
+}
+
+/* SUBTÍTULO*/
+.boss-text h3{
+    font-size: 42px;
+
+    margin-bottom: 30px;
+
+    font-family: 'Cinzel', serif;
+}
+
+/* PARÁGRAFOS */
+.boss-text p{
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+    color: #D6D6D6;
+}
+
+/* STATS */
+.boss-stats{
+    margin-top: 30px;
+
+    margin-bottom: 40px;
+}
