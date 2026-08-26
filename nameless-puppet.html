@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parade Master | Lies of P</title>
+    <title>Nameless Puppet | Lies of P</title>
+
+    <!-- CSS Global -->
     <link rel="stylesheet" href="css/global.css">
+    <!-- CSS Específico para as páginas de detalhes dos chefes -->
     <link rel="stylesheet" href="css/boss-detail.css">
 </head>
+
 <body>
+
     <header>
-        <!-- Mantive o padrão do cabeçalho global -->
-        <h1>Lies of P</h1> 
+        <h1>Lies of P</h1>
         <nav>
             <a href="home.html">Home</a>
             <a href="bosses.html">Bosses</a>
@@ -18,45 +22,42 @@
             <a href="lore.html">Lore</a>
         </nav>
     </header>
-    
-    <!-- Usando a classe correta definida no boss-detail.css -->
+
     <main class="boss-detail-page">
-        
+        <!-- Botão de voltar -->
         <a href="bosses.html" class="back-button">&larr; Back to Bosses</a>
 
         <div class="boss-detail-container">
-            
-            <!-- Adicionei a caixa da imagem que estava faltando -->
+            <!-- Coluna da Imagem -->
             <div class="boss-image-box">
-                <img src="img/Parade_Master_banner.png" alt="Parade Master">
+                <img src="img/Nameless_Puppet_4.webp" alt="Nameless Puppet">
             </div>
 
-            <!-- Usando a classe correta para os textos -->
+            <!-- Coluna das Informações -->
             <div class="boss-info-box">
-                <h2>Parade Master</h2>
-                <h3 class="subtitle">The First Puppet Nightmare</h3>
-
+                <h2>Nameless Puppet</h2>
+                <h3 class="subtitle">O Pesadelo Oculto</h3>
+                
                 <p class="boss-description">
-                    The Parade Master is the first major boss encountered in Krat. Once created to entertain the city's citizens, this gigantic puppet became a terrifying monster after the puppet frenzy. Brutal and unpredictable, the Parade Master introduces players to the dark and violent world of Lies of P.
+                    Uma marionete criada com um único propósito, mantida em segredo nas profundezas. O Nameless Puppet é a arma final, ágil e letal, que representa o verdadeiro teste para o menino que deseja se tornar humano.
                 </p>
 
-                <!-- Usando a classe de status que criamos com a borda azul -->
+                <!-- Tabela de Status/Fraquezas -->
                 <div class="stats-card">
                     <h4>Combat Information</h4>
                     <ul>
-                        <li><strong>Type:</strong> Puppet</li>
+                        <li><strong>Location:</strong> Under the Abyss</li>
                         <li><strong>Weakness:</strong> Electric Blitz</li>
-                        <li><strong>Location:</strong> Krat Central Station</li>
+                        <li><strong>Resistance:</strong> Fire</li>
+                        <li><strong>Drop:</strong> Nameless Puppet's Ergo</li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </main>
-
+    
     <footer>
         <p>Created by Vitor Andrade</p>
     </footer>
-    
 </body>
 </html>

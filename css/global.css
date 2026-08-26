@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0D0D0D;
+    color: #EAEAEA;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 80px;
+
+    background-color: rgba(0,0,0,0.3);
+
+    backdrop-filter: blur(5px);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+header h1{
+    font-family: 'Cinzel', serif;
+
+    color: #3A6EA5;
+
+    font-size: 36px;
+
+    letter-spacing: 2px;
+}
+
+nav{
+    display: flex;
+    gap: 40px;
+}
+
+nav a{
+    color: #EAEAEA;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #3A6EA5;
+}
+
+footer{
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: #080808;
+
+    color: #cfcfcf;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width: 768px){
+
+    header{
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    header h1{
+        font-size: 28px;
+    }
+
+    nav{
+        gap: 20px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    nav a{
+        font-size: 16px;
+    }
+
+}

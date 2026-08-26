@@ -1,0 +1,128 @@
+.weapons-page {
+    min-height: 100vh;
+    padding: 60px 80px;
+    background-color: #0D0D0D;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 54px;
+    margin-bottom: 60px;
+    font-family: 'Cinzel', serif;
+    color: #EAEAEA;
+}
+
+.weapon-category {
+    margin-bottom: 70px;
+}
+
+.category-title {
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    color: #3A6EA5;
+    border-bottom: 2px solid rgba(58,110,165,0.3);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.category-desc {
+    color: #cfcfcf;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* O Grid que vai organizar os cards lado a lado */
+.weapon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* O Card da Arma */
+.weapon-card {
+    background-color: #111111;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.weapon-card:hover {
+    transform: translateY(-5px);
+    border-color: #3A6EA5;
+    box-shadow: 0 5px 15px rgba(58,110,165,0.2);
+}
+
+/* Destacando as Armas Especiais com cor diferente */
+.weapon-card.special {
+    border: 1px solid rgba(139, 0, 0, 0.4);
+}
+
+.weapon-card.special:hover {
+    border-color: #8B0000;
+    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.2);
+}
+
+/* Estilo da Imagem da Arma */
+.weapon-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Use 'contain' se as imagens das armas tiverem fundo transparente */
+    object-position: center;
+    background-color: #080808; 
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.weapon-info {
+    padding: 20px;
+}
+
+.weapon-info h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    color: #EAEAEA;
+    margin-bottom: 12px;
+}
+
+/* Etiquetas (Tags) de estilo da arma */
+.weapon-type {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Cores diferentes para cada tipo de 'build' */
+.weapon-type.balance {
+    background-color: rgba(128, 128, 128, 0.2);
+    color: #A9A9A9;
+}
+
+.weapon-type.motivity {
+    background-color: rgba(139, 0, 0, 0.2);
+    color: #ff6666;
+}
+
+.weapon-type.technique {
+    background-color: rgba(58, 110, 165, 0.2);
+    color: #66b3ff;
+}
+
+.weapon-type.advance {
+    background-color: rgba(46, 139, 87, 0.2);
+    color: #66ffb3;
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    .weapons-page {
+        padding: 40px 20px;
+    }
+    
+    .page-title {
+        font-size: 42px;
+    }
+}
