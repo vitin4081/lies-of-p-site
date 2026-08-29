@@ -1,0 +1,128 @@
+.timeline-page {
+    min-height: 100vh;
+    padding: 60px 80px;
+    background: linear-gradient(rgba(13, 13, 13, 0.90), rgba(13, 13, 13, 0.95)), 
+                url('../img/Lore-wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-button {
+    align-self: flex-start;
+    color: #3A6EA5;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    color: #ffffff;
+    transform: translateX(-5px);
+}
+
+.timeline-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-title {
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+    color: #EAEAEA;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    color: #a0a0a0;
+    font-size: 18px;
+}
+
+/* Estrutura da Linha do Tempo */
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 40px; /* Espaço para a linha na esquerda */
+}
+
+/* A Linha Vertical */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px; /* Centraliza a linha na bolinha */
+    height: 100%;
+    width: 2px;
+    background: rgba(58, 110, 165, 0.3);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* As Bolinhas (Nós) */
+.timeline-dot {
+    position: absolute;
+    top: 5px;
+    left: -31px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #3A6EA5;
+    box-shadow: 0 0 10px #3A6EA5;
+    border: 3px solid #0D0D0D;
+    z-index: 1;
+}
+
+/* O Conteúdo do Evento */
+.timeline-content {
+    background-color: rgba(17, 17, 17, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    padding: 25px 30px;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+.timeline-content:hover {
+    border-color: rgba(58, 110, 165, 0.5);
+    background-color: rgba(22, 22, 22, 0.95);
+    transform: translateX(10px);
+}
+
+.timeline-content.highlight {
+    border-left: 4px solid #3A6EA5;
+}
+
+.timeline-content h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    color: #EAEAEA;
+    margin-bottom: 12px;
+}
+
+.timeline-content p {
+    color: #cfcfcf;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    .timeline-page { padding: 40px 20px; }
+    .page-title { font-size: 38px; }
+    .timeline-container { padding-left: 30px; }
+    .timeline-container::before { left: 9px; }
+    .timeline-dot { left: -27px; }
+    .timeline-content:hover { transform: translateX(5px); }
+}

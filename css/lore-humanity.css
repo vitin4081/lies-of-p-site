@@ -1,0 +1,149 @@
+.humanity-page {
+    min-height: 100vh;
+    padding: 60px 80px;
+    background: linear-gradient(rgba(13, 13, 13, 0.95), rgba(13, 13, 13, 0.98)), 
+                url('../img/Lore-wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-button {
+    align-self: flex-start;
+    color: #3A6EA5;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    color: #ffffff;
+    transform: translateX(-5px);
+}
+
+.humanity-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-title {
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+    color: #3A6EA5; /* Azul Ergo em destaque */
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    color: #a0a0a0;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.mechanic-intro {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 18px;
+    color: #cfcfcf;
+    line-height: 1.8;
+}
+
+.section-heading {
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    color: #EAEAEA;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Grid de Sinais de Humanidade */
+.humanity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 70px;
+}
+
+.humanity-card {
+    background-color: rgba(17, 17, 17, 0.85);
+    border-left: 4px solid #3A6EA5;
+    padding: 30px;
+    border-radius: 0 8px 8px 0;
+    backdrop-filter: blur(5px);
+    transition: 0.3s ease;
+}
+
+.humanity-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(25, 25, 25, 0.95);
+    box-shadow: 0 8px 20px rgba(58, 110, 165, 0.15);
+}
+
+.humanity-card h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    color: #EAEAEA;
+    margin-bottom: 15px;
+}
+
+.humanity-card p {
+    color: #b0b0b0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Tabela de Finais */
+.endings-table-container {
+    width: 100%;
+    max-width: 1000px;
+    overflow-x: auto;
+    margin-bottom: 40px;
+}
+
+.endings-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(17, 17, 17, 0.85);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.endings-table th, .endings-table td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.endings-table th {
+    background-color: #0D0D0D;
+    color: #3A6EA5;
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+}
+
+.endings-table td {
+    color: #cfcfcf;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.endings-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.endings-table tbody tr:hover {
+    background-color: rgba(58, 110, 165, 0.05);
+}
+
+@media(max-width: 768px) {
+    .humanity-page { padding: 40px 20px; }
+    .page-title { font-size: 38px; }
+    .endings-table th, .endings-table td { padding: 15px; }
+}
