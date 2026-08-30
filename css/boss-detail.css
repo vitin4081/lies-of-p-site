@@ -158,6 +158,64 @@
     color: #cfcfcf;
 }
 
+/* --- THE BROTHERHOOD ROSTER --- */
+.brotherhood-roster {
+    width: 100%;
+    margin-top: 50px;
+    border-top: 1px solid rgba(58,110,165,0.3);
+    padding-top: 40px;
+}
+
+.brotherhood-roster h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    color: #EAEAEA;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.brotherhood-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.brotherhood-member {
+    background-color: #111111;
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.brotherhood-member:hover {
+    border-color: #8B0000;
+    transform: translateY(-5px);
+}
+
+.brotherhood-member h4 {
+    color: #EAEAEA;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Cinzel', serif;
+}
+
+.brotherhood-member .member-weapon {
+    color: #8B0000;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.brotherhood-member p {
+    color: #cfcfcf;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
 /* RESPONSIVIDADE */
 @media(max-width: 900px) {
     .boss-detail-page {
