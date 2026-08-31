@@ -117,6 +117,11 @@
     margin-bottom: 15px;
 }
 
+.boss-link {
+    text-decoration: none;
+    color: inherit; /* Opcional: garante que o texto não fique com aquele azul padrão de link */
+}
+
 .card-tag.protagonist { background-color: rgba(58, 110, 165, 0.3); color: #66b3ff; }
 .card-tag.ally { background-color: rgba(46, 139, 87, 0.3); color: #85e0a3; }
 .card-tag.antagonist { background-color: rgba(128, 0, 128, 0.3); color: #d8b4fe; }

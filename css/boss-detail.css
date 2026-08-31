@@ -116,23 +116,25 @@
 
 /* --- NOVAS REGRAS PARA MÚLTIPLAS IMAGENS --- */
 .dual-images {
+    flex: 1; /* Garante que a coluna de imagens ocupe o mesmo espaço da coluna de textos */
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Cria um espaço entre a foto do King e do Romeo */
+    gap: 20px; 
     background-color: transparent;
     border: none;
     padding: 0;
 }
 
 .dual-images img {
+    width: 100%; /* Faz a imagem nunca ultrapassar a largura da coluna */
+    aspect-ratio: 12 / 7; /* Mantém a mesma proporção retangular dos outros chefes */
+    object-fit: cover; /* Faz o corte perfeito sem "amassar" ou esticar a foto */
+    object-position: center;
+    
     border: 1px solid rgba(58,110,165,0.3);
     padding: 10px;
     background-color: #111111;
     border-radius: 4px;
-    
-    /* Se quiser que ambas tenham exatamente a mesma altura: */
-    /* height: 350px; */
-    /* object-fit: cover; */
 }
 
 /* --- ESTILO DA EXPERIÊNCIA PESSOAL --- */
